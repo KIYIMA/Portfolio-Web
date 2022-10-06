@@ -1,0 +1,120 @@
+.logo{
+    width: auto;
+    
+}
+.link{
+    display: flex;
+    flex-direction: row;
+
+}
+.logo a{
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+.textLogo{
+    display: flex;
+    align-items: flex-end;
+    text-shadow: 3px 3px 15px rgb(101, 33, 133);
+}
+.btnInicio{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.btnInicio a{
+    color: rgb(200, 196, 250);
+    text-decoration: none;
+}
+.btnEdit{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.proyectos{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.CV{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.hys{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.educacion{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.acercaDe{
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+}
+.iniciar{
+    width: 40px;
+    height: 40px;
+    border-width: medium;
+    color: rgb(200, 196, 250);
+    border-color:  rgb(181, 177, 255);
+    box-shadow: 0px 0px 5px rgb(101, 33, 133);
+}
+.btn:hover {
+    box-shadow: inset 0px 0px 10px rgb(101, 33, 133);
+  }
+ 
+.redes img{
+    width:70px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+
+
+@media(max-width: 575px){
+    .container{
+        flex-direction: column;
+    
+    }
+    .redes{
+        margin-bottom: 1%;
+    }
+    .redes img{
+        padding: 1%;
+    }
+}
+
+@media(max-width: 350px){
+    
+    .redes{
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    .redes img{
+        width: 30px;
+        margin: 0.2em;
+    }
+    .btnInicio .iniciar{
+        width: 30px;
+        height: 30px;
+        margin: 0.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

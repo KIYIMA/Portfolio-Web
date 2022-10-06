@@ -1,0 +1,49 @@
+<div id="AcercaDe" class=" acercaDeRow">
+    <div class="row">
+        <div class="col-12" *ngFor="let AcercaDe of acercaDe">
+
+
+            
+                <div class='col-xl-6 col-sm-12 col-xs-12 '>
+                    <img id="fotoPerfil" src="../../../assets/per2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div
+                    [ngClass]="{'col-xs-12 col-sm-6 col-xl-6 acercade': isLogged, ' col-xs-12 col-sm-6 col-xl-6 acercade': !isLogged } ">
+                    <span>
+                        <h1>Acerca de mí</h1>
+                        <p>{{AcercaDe.descripcion}}</p>
+                    </span>
+                </div>
+
+            
+
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 btnEditDelete" *ngIf="isLogged">
+                    <div class="editButtom">
+                        <button class="btn btn-light" routerLink="/editacercade/{{AcercaDe.id}}">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </div>
+
+                    <div class="editButtom">
+                        <button class="btn btn-danger" style="margin-left:5px ;" *ngIf="isLogged"
+                            (click)="delete(AcercaDe.id)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-xs-12 col-sm-12 col-md-10 col-lg-10'>
+        <div>
+            <button type="button" class="btn btn-dark " routerLink="/nuevoacercade" *ngIf="isLogged ">
+                +
+            </button>
+        </div>
+    </div>
+
+</div>

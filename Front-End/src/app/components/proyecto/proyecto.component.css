@@ -1,0 +1,70 @@
+.proyects{
+    padding-bottom: 3%; 
+    text-align: center; 
+    font-family: 'Silkscreen', cursive;
+    text-shadow: 3px 3px 15px rgb(101, 33, 133);
+}
+.proyectoRow{
+    margin-right:0% ;
+    padding: 4%;
+    background-color: #151d36 ;
+    color: white;
+}
+.container{
+    width: auto;
+    
+}
+
+.parte2{
+    margin-bottom: 3%;
+}
+
+.editGroupButtoms{
+    display: flex;
+    flex-direction: row;
+}
+.editButtom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+.editButtom button{
+    width: 27px;
+}
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span a{
+    
+    color: rgb(200, 196, 250);
+}
+.listProyects{
+    display: flex;
+    flex-direction:inherit;
+}
+.proyectName{
+    font-family: 'Silkscreen', cursive;
+}
+.card{
+    background-color: #151d36;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 5px 10px rgb(162, 140, 172);
+}
+/*    box-shadow: 3px 3px 10px rgb(101, 33, 133);*/
+.contentProyects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.itemsProyects{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: space-around;
+}
